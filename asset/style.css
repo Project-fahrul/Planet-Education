@@ -17,6 +17,7 @@
 }
 .nav-link{
     color: var(--neutral-90);
+    margin: 0 12px;
 }
 
 .navbar-nav .nav-link.active{
@@ -98,6 +99,7 @@ a.btn.third{
     gap: 0 8px;
     position: relative;
     z-index: 10;
+    margin-top: 40px;
 }
 
 .class-superior .class-course li{
@@ -177,4 +179,43 @@ a.btn.third{
 
 .position-absolute.z{
     z-index: 20;
+}
+
+.slick-prev,
+.slick-next{
+    width: 32px !important;
+    height: 32px !important;
+    top: 30%;
+}
+
+.slick-prev::before,
+.slick-next::before{
+    font-size: 32px;
+}
+
+.slick-slide > div{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots{
+    bottom: -54px;
+}
+
+.slick-dots li button:before{
+    font-size: 8px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+    color: var(--primary);
+    opacity: 1;
+}
+
+.why{
+    height: 1420px;
+    background-image: url('./bg-sec1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
