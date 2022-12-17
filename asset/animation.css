@@ -1,0 +1,39 @@
+.rotate{
+    
+    animation: rotation 10s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.shake{
+    animation: shaking 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes shaking {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

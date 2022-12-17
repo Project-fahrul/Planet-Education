@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); 
+
+:root{
+    --neutral-90: #404040;
+    --primary: #4462AE;
+    --yellow: #FFC700;
+    --black-primary: #223157;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar{
+    height: 80px;
+    padding: 12px 0;
+}
+.nav-link{
+    color: var(--neutral-90);
+}
+
+.navbar-nav .nav-link.active{
+    font-weight: 500;
+    color: var(--primary);
+}
+
+
+a.btn{
+    border-radius: 4px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    max-height: 40px;
+}
+a.btn.sec{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+a.btn.prim{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+a.btn.third{
+    background-color: var(--yellow);
+    color: var(--black-primary);
+}
+
+.banner{
+    color: #FFFFFF;
+    background: radial-gradient(38.66% 38.66% at 72.57% 100%, #FFDD66 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #223157;
+}
+
+.banner .caption{
+    padding-top: 60px;
+}
+
+.banner .caption h2{
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.banner .caption h1{
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.class-superior{
+    padding-top: 80px;
+    padding-bottom: 144px;
+    background-color: #D3DEF8;
+}
+
+.class-superior h1{
+    color: #121212;
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.class-superior p{
+    display: inline-block;
+    max-width: 810px;
+    color: #404040;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.class-superior .position-absolute{
+    z-index: 1;
+}
+
+.class-superior .class-course{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 0 8px;
+    position: relative;
+    z-index: 10;
+}
+
+.class-superior .class-course li{
+    color: var(--black-primary);
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 4px 16px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.class-superior .class-course li.active{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class-list{
+    z-index: 10;
+}
+
+.class-superior .class-list .planet-class{
+    background-color: #FFFFFF;
+    max-width: 90%;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.class-superior .class-list .planet-class + .planet-class{
+    margin-left: 16px;
+}
+
+.planet-class .title{
+    font-weight: 600;
+}
+
+.planet-class .wrapper{
+    background: rgba(68, 98, 174, 0.2);
+    border-radius: 2px;
+    padding: 8px 4px;
+}
+
+.planet-class .wrapper::after{
+    clear: both;
+    content: " ";
+    display: block;
+}
+
+.planet-class .desc p{
+    margin: 0;
+    color: #0A0A0A;
+    font-size: 0.75rem;
+    width: calc(100% - 20px);
+    margin-left: 4px;
+}
+
+.planet-class .desc img,.planet-class .desc p{
+    float: left;
+    display: inline;
+}
+
+.class-list .price{
+    margin-top: 16px;
+}
+
+.class-list .price p{
+    display: block;
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+.class-list .price p + p{
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.position-absolute.z{
+    z-index: 20;
+}
